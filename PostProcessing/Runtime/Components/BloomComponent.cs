@@ -26,7 +26,8 @@ namespace UnityEngine.PostProcessing
             {
                 return model.enabled
                        && model.settings.bloom.intensity > 0f
-                       && !context.interrupted;
+                       && !context.interrupted
+                       && GraphicsSettings.bloomEnabled;
             }
         }
 

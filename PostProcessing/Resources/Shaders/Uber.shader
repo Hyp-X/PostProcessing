@@ -18,15 +18,15 @@ Shader "Hidden/Post FX/Uber Shader"
         #pragma target 3.0
 
         #pragma multi_compile __ UNITY_COLORSPACE_GAMMA
-        #pragma multi_compile __ EYE_ADAPTATION
-        #pragma multi_compile __ CHROMATIC_ABERRATION
-        #pragma multi_compile __ DEPTH_OF_FIELD DEPTH_OF_FIELD_COC_VIEW
+        //#pragma multi_compile __ EYE_ADAPTATION
+        //#pragma multi_compile __ CHROMATIC_ABERRATION
+        //#pragma multi_compile __ DEPTH_OF_FIELD DEPTH_OF_FIELD_COC_VIEW
         #pragma multi_compile __ BLOOM
         #pragma multi_compile __ BLOOM_LENS_DIRT
         #pragma multi_compile __ COLOR_GRADING COLOR_GRADING_LOG_VIEW
         #pragma multi_compile __ USER_LUT
-        #pragma multi_compile __ GRAIN
-        #pragma multi_compile __ VIGNETTE_CLASSIC VIGNETTE_ROUND VIGNETTE_MASKED
+        //#pragma multi_compile __ GRAIN
+        //#pragma multi_compile __ VIGNETTE_CLASSIC VIGNETTE_ROUND VIGNETTE_MASKED
 
         #include "UnityCG.cginc"
         #include "Bloom.cginc"

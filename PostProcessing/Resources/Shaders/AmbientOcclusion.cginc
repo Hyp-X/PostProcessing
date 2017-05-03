@@ -32,7 +32,8 @@
 // The constant below determines the contrast of occlusion. This allows
 // users to control over/under occlusion. At the moment, this is not exposed
 // to the editor because it�s rarely useful.
-static const float kContrast = 0.6;
+//static const float kContrast = 0.6;
+static const float kContrast = 0.3;
 
 // The constant below controls the geometry-awareness of the bilateral
 // filter. The higher value, the more sensitive it is.

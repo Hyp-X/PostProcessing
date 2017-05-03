@@ -51,7 +51,7 @@ namespace UnityEngine.PostProcessing
 
         bool ambientOnlySupported
         {
-            get { return context.isHdr && model.settings.ambientOnly && context.isGBufferAvailable && !model.settings.forceForwardCompatibility; }
+            get { return /*context.isHdr && */model.settings.ambientOnly && context.isGBufferAvailable && !model.settings.forceForwardCompatibility; }
         }
 
         public override bool active
@@ -60,7 +60,8 @@ namespace UnityEngine.PostProcessing
             {
                 return model.enabled
                        && model.settings.intensity > 0f
-                       && !context.interrupted;
+                       && !context.interrupted
+                       && GraphicsSettings.ambientOcclusionEnabled;
             }
         }
 
